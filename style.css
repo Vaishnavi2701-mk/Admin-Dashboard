@@ -312,22 +312,22 @@ main .insights svg circle {
   stroke-dashoffset: 92;
 }
 
-main .insights .sales svg circle{
+main .insights .sales svg circle {
   stroke-dashoffset: -30;
   stroke-dasharray: 200;
 }
 
-main .insights .expenses svg circle{
+main .insights .expenses svg circle {
   stroke-dashoffset: 20;
   stroke-dasharray: 80;
 }
 
-main .insights .income svg circle{
+main .insights .income svg circle {
   stroke-dashoffset: 35;
   stroke-dasharray: 110;
 }
 
-main .insights .progress .number{
+main .insights .progress .number {
   position: absolute;
   top: 0;
   left: 0;
@@ -338,22 +338,22 @@ main .insights .progress .number{
   align-items: center;
 }
 
-main .insights small{
+main .insights small {
   margin-top: 1.3rem;
   display: block;
 }
 
 /*---------------Recent Orders-----------------*/
 
-main .recent-orders{
+main .recent-orders {
   margin-top: 2rem;
 }
 
-main .recent-orders h2{
+main .recent-orders h2 {
   margin-bottom: 0.8rem;
 }
 
-main .recent-orders table{
+main .recent-orders table {
   background: var(--color-white);
   width: 100%;
   border-radius: var(--card-border-radius);
@@ -363,22 +363,99 @@ main .recent-orders table{
   transition: all 300ms ease;
 }
 
-main .recent-orders table:hover{
+main .recent-orders table:hover {
   box-shadow: none;
 }
 
-main .recent-orders table tbody td{
+main .recent-orders table tbody td {
   height: 2.8rem;
   border-bottom: 1px solid var(--color-light);
   color: var(--color-dark-variant);
 }
-main table tbody tr:last-child td{
+main table tbody tr:last-child td {
   border: none;
 }
 
-main .recent-orders a{
+main .recent-orders a {
   text-align: center;
   display: block;
   margin: 1rem auto;
   color: var(--color-primary);
+}
+
+/*-------------------------RIGHT TOP-----------------------------*/
+
+.right {
+  margin-top: 1.4rem;
+}
+
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.right .top button {
+  display: none;
+}
+
+.right .theme-toggler {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span{
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .theme-toggler span.active{
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+.right .top .profile{
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+/*-------------------------RECENT UPDATES-----------------------------*/
+
+.right .recent-updates{
+  margin-top: 1rem;
+}
+
+.right .recent-updates h2{
+  margin-bottom: 0.8rem;
+}
+
+.right .recent-updates .updates{
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right .recent-updates .updates:hover{
+  box-shadow: none;
+}
+
+.right .recent-updates .updates .update{
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }

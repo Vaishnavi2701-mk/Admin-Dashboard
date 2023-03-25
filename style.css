@@ -131,7 +131,6 @@ b {
 
 aside {
   height: 100vh;
-  background: gray;
 }
 
 aside .top {
@@ -159,7 +158,6 @@ aside .close {
 /* ================ SIDEBAR ================= */
 
 aside .sidebar {
-  background: white;
   display: flex;
   flex-direction: column;
   height: 86vh;
@@ -226,3 +224,6 @@ aside .sidebar .message-count {
   font-size: 11px;
   border-radius: var(--border-radius-1);
 }
+
+/* -------------------- MAIN -------------------- */
+

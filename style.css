@@ -144,16 +144,16 @@ aside {
 }
 
 aside .top {
-  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.4rem;
+  color: var(--color-dark);
 }
 
 aside .logo {
   display: flex;
-  gap: 0;
+  gap: 0.8rem;
 }
 
 aside .logo img {
@@ -239,6 +239,7 @@ aside .sidebar .message-count {
 
 main {
   margin-top: 1.4rem;
+  color: var(--color-dark);
 }
 
 main .date {
@@ -293,6 +294,7 @@ main .insights > div .middle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--color-dark);
 }
 
 main .insights h3 {
@@ -397,6 +399,7 @@ main .recent-orders a {
 
 .right {
   margin-top: 1.4rem;
+  color: var(--color-dark);
 }
 
 .right .top {
@@ -602,6 +605,7 @@ main .recent-orders a {
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
+    grid-template-columns: 1fr;
   }
   aside {
     position: fixed;
@@ -644,7 +648,7 @@ main .recent-orders a {
   }
   main {
     margin-top: 8rem;
-    padding: 0.1rem;
+    padding: 0.8rem;
   }
   main .recent-orders {
     position: relative;
